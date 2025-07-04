@@ -1,3 +1,6 @@
+// Mini change: Add a console log to confirm JS is loaded
+console.log('Meal Finder JS loaded!');
+
 // --- State Management ---
         let allCategories = []; // Stores all fetched categories
         let currentCategory = null; // Tracks the currently viewed category for back navigation
