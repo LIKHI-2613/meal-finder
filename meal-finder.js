@@ -88,6 +88,13 @@ console.log('Meal Finder JS loaded!');
             return results.filter(meal => meal !== null); // Filter out any failed fetches
         }
 
+        // Mini change: Add a helper to clear the search input after search
+        function clearSearchInput() {
+            if (DOMElements.search.input) {
+                DOMElements.search.input.value = '';
+            }
+        }
+
         // --- View Management ---
         /**
          * Manages which sections of the page are visible based on the current view.
@@ -502,6 +509,7 @@ console.log('Meal Finder JS loaded!');
                 e.preventDefault();
                 const searchTerm = DOMElements.search.input.value;
                 searchAndDisplayMeals(searchTerm);
+                clearSearchInput(); // Mini change: clear input after search
             });
         });
 
