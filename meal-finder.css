@@ -31,7 +31,7 @@ body {
             font-weight: 600;
             font-size: 0.75rem;
             text-transform: uppercase;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 4px rgba(34,197,94,0.15); /* Added a soft shadow for depth */
         }
         
         /* Hover effect for meal and category cards */
@@ -120,3 +120,5 @@ body {
             border-radius: 10px;
             font-weight: 900;
         }
+        git add .
+        git commit -m "Resolve merge conflicts"
