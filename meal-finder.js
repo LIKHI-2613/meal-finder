@@ -52,12 +52,14 @@ console.log('Meal Finder JS loaded!');
         const openSidebar = () => {
             DOMElements.sidebar.self.classList.add('open');
             DOMElements.sidebar.overlay.classList.remove('hidden');
+            console.log('Sidebar opened');
         };
         
         // Closes the sidebar menu
         const closeSidebar = () => {
             DOMElements.sidebar.self.classList.remove('open');
             DOMElements.sidebar.overlay.classList.add('hidden');
+            console.log('Sidebar closed');
         };
         
         /**
