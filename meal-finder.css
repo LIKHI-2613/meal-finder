@@ -38,9 +38,10 @@ body {
         .card-hover {
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
         }
+        /* Slightly increased the card-hover lift effect for more emphasis */
         .card-hover:hover {
-            transform: translateY(-5px); /* Lifts card slightly on hover */
-            box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* Adds more prominent shadow on hover */
+            transform: translateY(-8px) scale(1.03); /* Lifts and slightly enlarges card on hover */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12); /* Keeps the prominent shadow on hover */
         }
 
         /* Custom scrollbar styling for a cleaner look */
@@ -80,20 +81,21 @@ body {
             font-weight: bold;
         }
 
-        /* Custom styling for ingredient numbers with skyblue round backgrounds */
+        /* Changed ingredient number circle background to a more vibrant green */
         .ingredient-number-circle {
             flex-shrink: 0;
             width: 1.5rem; /* w-6 */
             height: 1.5rem; /* h-6 */
-            background-color: #1c88b6; /* Skyblue */
+            background-color: #22c55e; /* Green */
             border-radius: 9999px; /* rounded-full */
             display: flex;
             justify-content: center;
             align-items: center;
             margin-right: 0.5rem; /* mr-2 */
-            color: rgb(251, 242, 242);
+            color: #fbf2f2;
             font-size: 0.875rem; /* text-sm */
             font-weight: bold;
+            box-shadow: 0 2px 8px rgba(34,197,94,0.15); /* Added a soft shadow for depth */
         }
 
         /* Custom styling for measure items - NO INDIVIDUAL BOXES */
