@@ -124,4 +124,5 @@ body {
         /* Mini change: Add a soft drop shadow to the header for more depth */
         header {
             box-shadow: 0 4px 16px rgba(249, 115, 22, 0.12);
+            transition: background-color 0.3s ease;
         }

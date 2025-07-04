@@ -97,6 +97,13 @@ console.log('Meal Finder JS loaded!');
             }
         }
 
+        // Mini change: Add a helper to focus the search input when the page loads
+        function focusSearchInput() {
+            if (DOMElements.search.input) {
+                DOMElements.search.input.focus();
+            }
+        }
+
         // --- View Management ---
         /**
          * Manages which sections of the page are visible based on the current view.
@@ -500,6 +507,7 @@ console.log('Meal Finder JS loaded!');
         document.addEventListener('DOMContentLoaded', () => {
             // Initial load: show categories
             showCategoriesView(); 
+            focusSearchInput(); // Mini change: focus search input on load
 
             // Sidebar toggle
             DOMElements.header.menuButton.addEventListener('click', openSidebar);
