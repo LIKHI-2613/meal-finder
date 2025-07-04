@@ -504,3 +504,14 @@ console.log('Meal Finder JS loaded!');
                 searchAndDisplayMeals(searchTerm);
             });
         });
+
+        // Add subtle orange border to hero section for visual separation
+        const heroBorder = document.createElement('div');
+        heroBorder.className = 'absolute inset-x-0 top-0 h-1 bg-orange-500';
+        DOMElements.heroSection.appendChild(heroBorder);
+
+        // Add favicon for a more polished browser tab appearance
+        const faviconLink = document.createElement('link');
+        faviconLink.rel = 'icon';
+        faviconLink.href = 'https://example.com/favicon.ico'; // Replace with your favicon URL
+        document.head.appendChild(faviconLink);
