@@ -533,3 +533,8 @@ console.log('Meal Finder JS loaded!');
         faviconLink.rel = 'icon';
         faviconLink.href = 'https://example.com/favicon.ico'; // Replace with your favicon URL
         document.head.appendChild(faviconLink);
+
+        // Add soft orange drop shadow and smooth transition to header for visual depth
+        const header = DOMElements.header.menuButton.closest('header');
+        header.classList.add('shadow-md', 'transition-shadow', 'duration-300', 'ease-in-out');
+        header.style.boxShadow = '0 4px 8px rgba(255, 165, 0, 0.2)';
